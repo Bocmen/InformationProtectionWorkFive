@@ -40,8 +40,8 @@ namespace InformationProtectionWorkFiveShare
                 {
                     int val = await Console.ReadInt("Введите значение", token: token, defaultValue: 33);
                     enc = Encrypt(val);
-                    await Console.WriteLine($"Зашифрованное сообщение: \\(M = {dec}^{{{e}}}\\ mod\\ {n} = {enc}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
-                    await Console.WriteLine($"Исходное сообщение: \\(M = {c}^{{{d}}}\\ mod\\ {n} = {Decrypt(enc)}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
+                    await Console.WriteLine($"Зашифрованное сообщение: \\(M = {val}^{{{e}}}\\ mod\\ {n} = {enc}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
+                    await Console.WriteLine($"Исходное сообщение: \\(M = {enc}^{{{d}}}\\ mod\\ {n} = {Decrypt(enc)}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
                 }
                 else
                     break;

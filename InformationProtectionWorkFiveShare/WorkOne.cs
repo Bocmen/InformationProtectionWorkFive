@@ -27,7 +27,7 @@ namespace InformationProtectionWorkFiveShare
             Console.StartCollectionDecorate();
             await Console.WriteLine("Открытые ключи участников", ConsoleIOExtension.TextStyle.IsTitle);
             await Console.WriteLine($"\\(K_a = \\alpha^{{X_A}} = \\alpha^{{{secA}}} = {a}^{{{secA}}} mod({p}) = {keyA}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
-            await Console.WriteLine($"\\(K_a = \\alpha^{{X_B}} = \\alpha^{{{secB}}} = {a}^{{{secB}}} mod({p}) = {keyB}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
+            await Console.WriteLine($"\\(K_b = \\alpha^{{X_B}} = \\alpha^{{{secB}}} = {a}^{{{secB}}} mod({p}) = {keyB}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
             Console.StartCollectionDecorate();
             await Console.WriteLine("Обменные ключи", ConsoleIOExtension.TextStyle.IsTitle);
             await Console.WriteLine($"\\(K = K^{{X_A}}_{{B}} mod \\alpha = {keyB}^{{{secA}}} mod({p}) = {keyShareA}\\)", ConsoleIOExtension.TextStyle.UseLaTeX);
